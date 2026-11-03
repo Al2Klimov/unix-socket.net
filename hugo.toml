@@ -1,0 +1,54 @@
+baseurl = "https://unix-socket.net/"
+locale = "en-us"
+theme = "hugo-theme-terminal"
+enableRobotsTXT = true
+contentDir = "posts"
+publishDir = "output"
+
+# For raw HTML
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Required for syntax highlighting
+[markup.highlight]
+  noClasses = false
+
+[params]
+  contentTypeName = "posts"
+  centerTheme = true
+  readingTime = true
+
+[languages]
+  [languages.en]
+    label = "English"
+    title = "unix-socket.net"
+
+    [languages.en.params]
+      subtitle = "An opinionated IT blog."
+      missingContentMessage = "ENOENT"
+      missingBackButtonLabel = "cd /"
+
+      # No built-in fallback text exists for these two
+      readMore = "Read more"
+      readOtherPosts = "Other posts"
+
+      [languages.en.params.logo]
+        logoText = "unix-socket.net, an opinionated IT blog."
+
+      [languages.en.menu]
+        [[languages.en.menu.main]]
+          name = "Donate"
+          weight = 2
+          url = "https://al2klimov.de/donate"
+        [[languages.en.menu.main]]
+          name = "Search"
+          weight = 3
+          url = "https://duckduckgo.com/?q=site%3Aunix-socket.net"
+        [[languages.en.menu.main]]
+          name = "RSS"
+          weight = 4
+          url = "/index.xml"
+        [[languages.en.menu.main]]
+          name = "GitHub"
+          weight = 5
+          url = "https://github.com/Al2Klimov"
