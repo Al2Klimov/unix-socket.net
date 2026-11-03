@@ -1,4 +1,4 @@
-baseurl = "https://unix-socket.net/"
+baseurl = "https://staging.unix-socket.net/"
 locale = "en-us"
 theme = "hugo-theme-terminal"
 enableRobotsTXT = true
